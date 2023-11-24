@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primarycolor: #171100;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+li.action {
+    color: var(--primarycolor);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.header {
+}
+
+.header__logo {
+    display: inline-block;
+    max-width: 85px;
+}
+
+.header__logo div {
+    font-size: 2.2rem;
+    font-family: "Sen", sans-serif;
+    color: var(--primarycolor);
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+.header__logo span {
+    font-size: 2rem;
+    font-family: "Sen", sans-serif;
+    color: #ffb900;
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+.header__nav,
+.header__nav-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header__nav-menu {
+    margin-left: auto;
+    margin-right: 49px;
+    font-size: 1.6rem;
+}
+
+.nav__item {
+    padding: 15px 21px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.header__sign-up {
+    min-width: 144px;
+    padding: 11px 15px;
+    background: var(--primarycolor);
+    border-radius: 24.5px;
+}
+
+.header__sign-up a {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
