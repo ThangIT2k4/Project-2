@@ -42,15 +42,15 @@ li.action {
     font-family: "Sen", sans-serif;
     color: var(--primarycolor);
     font-weight: 700;
-    line-height: 1.42;
+    line-height: 1.4167;
 }
 
 .header__logo span {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: "Sen", sans-serif;
     color: #ffb900;
     font-weight: 700;
-    line-height: 1.42;
+    line-height: 1.4167;
 }
 
 .header__nav,
@@ -60,6 +60,10 @@ li.action {
     text-align: center;
 }
 
+.header__nav {
+    padding-top: 36px;
+}
+
 .header__nav-menu {
     margin-left: auto;
     margin-right: 49px;
@@ -67,7 +71,7 @@ li.action {
 }
 
 .nav__item {
-    padding: 15px 21px;
+    padding: 11px 21px;
     color: #5f5b53;
     font-size: 1.6rem;
     font-weight: 400;
