@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 :root {
@@ -16,6 +18,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+button {
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -23,6 +31,11 @@ a {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
 }
 
 li.action {
@@ -280,6 +293,55 @@ li.action::after {
     line-height: 1.23;
 }
 
+.section__courses {
+    padding: 200px 0px;
+}
+
+.courses__popular {
+    align-items: center;
+}
+
+.courses__title {
+    color: var(--primarycolor);
+    font-family: "Sen", sans-serif;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+}
+
+.courses__desc {
+    max-width: 458px;
+    margin-top: 16px;
+    color: var(--colorDesc);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.cousres__control {
+    display: inline-flex;
+    gap: 16px;
+}
+
+.courses__control {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.btn__control:hover {
+    object-fit: 50%;
+    color: #fff;
+    background: #ffb900;
+}
+
+.btn__control:hover img {
+    color: #fff;
+}
+
+.courses__group {
+}
 /*
     
 */
