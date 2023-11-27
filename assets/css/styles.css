@@ -324,15 +324,14 @@ li.action::after {
     gap: 16px;
 }
 
-.courses__control {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
+.btn__control {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ffb900;
+    border-radius: 50%;
 }
 
 .btn__control:hover {
-    object-fit: 50%;
-    color: #fff;
     background: #ffb900;
 }
 
@@ -340,7 +339,8 @@ li.action::after {
     color: #fff;
 }
 
-.courses__group {
+.btn__control img {
+    object-fit: cover;
 }
 /*
     
