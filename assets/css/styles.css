@@ -321,27 +321,50 @@ li.action::after {
 
 .cousres__control {
     display: inline-flex;
-    gap: 16px;
+    gap: 18px;
 }
 
 .btn__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 48px;
     height: 48px;
     border: 1px solid #ffb900;
     border-radius: 50%;
+    background: transparent;
+    color: #ffb900;
 }
 
 .btn__control:hover {
     background: #ffb900;
 }
 
-.btn__control:hover img {
+.btn__control:hover {
     color: #fff;
 }
 
 .btn__control img {
     object-fit: cover;
 }
+
+.courses__group {
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.course__item {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.course__thumb {
+    width: 100%;
+    max-height: 278px;
+    object-fit: cover;
+}
+
 /*
     
 */
