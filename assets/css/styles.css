@@ -38,6 +38,14 @@ a {
     justify-content: space-between;
 }
 
+.line__clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
+}
+
 li.action {
     position: relative;
     color: var(--primarycolor);
@@ -132,7 +140,7 @@ li.action::after {
 
 /* hero */
 
-.section__hero {
+.hero {
     background: #fffcf4;
     padding: 64px 0 65px;
 }
@@ -198,14 +206,14 @@ li.action::after {
     margin: auto;
 }
 
-.course__lable {
+.hero__course .course__lable {
     color: var(--colorDesc);
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.86;
 }
 
-.course__title {
+.hero__course .course__title {
     color: var(--primarycolor);
     font-size: 1.8rem;
     font-weight: 600;
@@ -293,15 +301,18 @@ li.action::after {
     line-height: 1.23;
 }
 
-.section__courses {
-    padding: 200px 0px;
+/* course */
+
+.courses {
+    margin-top: 135px;
+    padding: 65px 0px;
 }
 
-.courses__popular {
+.courses .courses__popular {
     align-items: center;
 }
 
-.courses__title {
+.courses .courses__title {
     color: var(--primarycolor);
     font-family: "Sen", sans-serif;
     font-size: 3.8rem;
@@ -310,7 +321,7 @@ li.action::after {
     letter-spacing: -0.76px;
 }
 
-.courses__desc {
+.courses .courses__desc {
     max-width: 458px;
     margin-top: 16px;
     color: var(--colorDesc);
@@ -348,23 +359,186 @@ li.action::after {
     object-fit: cover;
 }
 
-.courses__group {
+.courses .courses__group {
     margin-top: 55px;
     gap: 30px;
 }
 
 .course__item {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     border-radius: 12px;
-    overflow: hidden;
+    border: 1px solid #e2dfda;
+    background: #fff;
+}
+
+.course__item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
 }
 
 .course__thumb {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     width: 100%;
     max-height: 278px;
     object-fit: cover;
+    cursor: pointer;
 }
 
+.course__info {
+    padding: 16px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.course__head {
+    align-items: center;
+}
+
+.course__sub-title {
+    color: var(--primarycolor);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.course__rating {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.course__star {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+}
+
+.course__value {
+    color: #fea31b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.course__content {
+    margin-top: 6px;
+    color: var(--colorDesc);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.course__foot {
+    margin-top: 12px;
+    align-items: center;
+}
+
+.course__price {
+    color: var(-primarycolor);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.course__buy {
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+    background: var(--primarycolor);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.course__buy:hover {
+    cursor: pointer;
+    background: #ffb900;
+}
+
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback__user {
+    width: calc(100% / 3);
+}
+
+.feedback .user__avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.feedback .user__avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback .user__name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: "Sen", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+.feedback .user__work {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.user__dots-silde {
+    display: flex;
+    column-gap: 6px;
+}
+
+.user__dots-silde li {
+    margin-top: 28px;
+    width: 6px;
+    height: 6px;
+    background: #634700;
+    border-radius: 50%;
+}
+
+.user__dots-silde li:nth-child(2) {
+    background: #ffb900;
+}
+
+.feedback__group {
+    position: relative;
+    flex: 1;
+}
+
+.feedback_quotation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -100%);
+}
+
+.feedback__group blockquote {
+    color: #fff;
+    font-style: italic;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.54;
+}
+
+/* feedback */
 /*
     
 */
