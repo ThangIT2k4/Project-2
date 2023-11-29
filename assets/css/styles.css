@@ -283,6 +283,7 @@ li.action::after {
     border: none;
     outline: none;
     background: transparent;
+    cursor: pointer;
     color: var(--primarycolor);
 }
 
